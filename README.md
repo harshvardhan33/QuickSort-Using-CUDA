@@ -25,3 +25,13 @@ Quicksort is a Divide and Conquer algorithm. It picks an element as pivot and pa
 
 6.Dynamic Allocation of Number of threads and blocks.
 
+# Optimization  Strategy
+
+The serial code is implemented by the help of the one stack, hence the performance of this algorithm will fall with increase in input size.
+To optimize the strategy into parallel execution use of two stacks has been done in order to separately and parallely perform the execution of partition. 
+Left and right partition will each have a stack of their own so we can run these both partitions parallely to achieve better computational time. 
+
+![](serial.jpg)
+![](parallel.jpg)
+![](memoryallocation.jpg)
+![](speedup.jpg)
